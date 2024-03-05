@@ -1,0 +1,11 @@
+body {
+  margin: 10%;
+  font-family: "Lucida Grande",Verdana,Lucida,Helvetica,Arial,sans-serif;
+}
+h1 { color: rgb(0, 51, 153); }
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+table { border-collapse: collapse; }
+td, th { border: 1px solid #999; padding: 0.2em; vertical-align: top; }
+th { text-align: left; }
+ul.plain {  list-style: none; padding: 0; margin: 0; }

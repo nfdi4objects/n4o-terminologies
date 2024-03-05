@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Terminologien im Rahmen von NFDI4Objects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="normalize.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link rel="stylesheet" href="n4o.css">
+  <link rel="icon" href="favicon-nfdi4obj-logo-1.png" sizes="32x32" />
+  <link rel="icon" href="favicon-nfdi4obj-logo-1.png" sizes="192x192" />
+</head>
+<body style="padding: 1em"
+      x-data="{ vocs: [] }"
+      x-init="fetch('https://bartoc.org/api/voc?partOf=http%3A%2F%2Fbartoc.org%2Fen%2Fnode%2F18961').then(r => r.json()).then(data => (vocs = data))">
+  <p>
+    <small><a href="https://nfdi4objects.github.io/">NFDI4Objects@GitHub</a></small>
+  </p>
+  <p>
+  <h1>Terminologien im Rahmen von NFDI4Objects</h1>
+  <p>
+    Diese Seite enthält eine experimentelle Liste von Terminologien
+    (Normdateien, Thesauri, Klassifikationen, Gazeteers, Ontologien...),
+    die im Rahmen der Forschungsdateninfrastruktur
+    <a href="https://www.nfdi4objects.net/">NFDI4Objects</a> (N4O)
+    relevant sein könnten. Die Liste wird 
+    <a href="https://bartoc.org/en/node/18961">in BARTOC</a> verwaltet.
+  </p>
+  <table>
+    <thead>
+      <tr>
+        <th>Vokabular</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <template x-for="voc in vocs">
+        <tr>
+          <td>
+            <a :href="voc.uri" x-text="voc.prefLabel.de || voc.prefLabel.en"></a>
+            <template x-if="voc.notation?.length">
+              <span x-text="`(${voc.notation[0]})``"/>
+            </template>
+            
+          </td>
+          <td>
+            <template x-if="voc.url">
+              <a :href="voc.url">🏠</a>
+            </template>
+          </td>
+        </tr>
+      </template>
+    </tbody>
+  </table>
+  <p>
+    Die Liste 
+    <a href="https://bartoc.org/api/voc?partOf=http%3A%2F%2Fbartoc.org%2Fen%2Fnode%2F18961">kann hier im JSKOS-Format</a> heruntergeladen werden.
+    Eine schönere Browsing-Oberfläche
+    mittels <a href="https://github.com/gbv/jskos-proxy">jskos-proxy</a>
+    ist angedacht.
+  </p>
+</body>
+</html>
