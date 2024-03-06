@@ -25,12 +25,14 @@
     <a href="https://www.nfdi4objects.net/">NFDI4Objects</a> (N4O)
     relevant sein könnten. Die Liste wird 
     <a href="https://bartoc.org/en/node/18961">in BARTOC</a> verwaltet.
+    Falls vorhanden, wird der URI-Namensraum für Einträgen der
+    jeweiligen Terminologie angezeigt.
   </p>
   <table>
     <thead>
       <tr>
         <th>Vokabular</th>
-        <th></th>
+        <th>URI-Namensraum</th>
       </tr>
     </thead>
     <tbody>
@@ -41,11 +43,13 @@
             <template x-if="voc.notation?.length">
               <span x-text="`(${voc.notation[0]})``"/>
             </template>
-            
-          </td>
-          <td>
             <template x-if="voc.url">
               <a :href="voc.url">🏠</a>
+            </template>
+          </td>
+          <td>
+            <template x-if="voc.namespace">
+              <span x-text="voc.namespace"/>
             </template>
           </td>
         </tr>
