@@ -33,6 +33,7 @@
       <tr>
         <th>Vokabular</th>
         <th>URI-Namensraum</th>
+        <!--th>API</th-->
       </tr>
     </thead>
     <tbody>
@@ -52,6 +53,11 @@
               <span x-text="voc.namespace"/>
             </template>
           </td>
+          <!--td>
+            <template x-if="voc.API?.length">
+              <span x-text="'vorhanden'"/>
+            </template>
+          </td-->
         </tr>
       </template>
     </tbody>
