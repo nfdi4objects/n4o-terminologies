@@ -33,7 +33,7 @@
       <tr>
         <th>Vokabular</th>
         <th>URI-Namensraum</th>
-        <!--th>API</th-->
+        <th>Pattern</th>
       </tr>
     </thead>
     <tbody>
@@ -53,11 +53,11 @@
               <span x-text="voc.namespace"/>
             </template>
           </td>
-          <!--td>
-            <template x-if="voc.API?.length">
-              <span x-text="'vorhanden'"/>
+          <td>
+            <template x-if="voc.notationPattern">
+              <span x-text="voc.notationPattern"/>
             </template>
-          </td-->
+          </td>
         </tr>
       </template>
     </tbody>
@@ -68,6 +68,10 @@
     Eine schönere Browsing-Oberfläche
     mittels <a href="https://github.com/gbv/jskos-proxy">jskos-proxy</a>
     ist angedacht.
+  </p>
+  <p>
+    Weitere Informationen zum Einsatz von Vokabularen im Rahmen von NFDI4Objects siehe in der Präsentation
+    <a href="https://doi.org/10.5281/zenodo.10906912">Terminologien in NFDI4Objects</a> vom 20. März 2024.
   </p>
 </body>
 </html>
