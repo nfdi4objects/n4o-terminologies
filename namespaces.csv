@@ -1,0 +1,33 @@
+name,uri,prefix
+B3Kat,http://lod.b3kat.de/title/,b3kat
+CIDOC-CRM current,http://cidoc-crm.org/current/,crmcur
+CIDOC-CRM,http://www.cidoc-crm.org/cidoc-crm/,crm
+CRMdig,http://www.ics.forth.gr/isl/CRMdig/,crmdig
+CRMinf,http://www.ics.forth.gr/isl/CRMinf/,crminf
+CRMsci,http://www.ics.forth.gr/isl/CRMsci/crmsci,crmsci
+DC Type,http://purl.org/dc/dcmitype/,dctype
+DC,http://purl.org/dc/elements/1.1/,dc
+DC Terms,http://purl.org/dc/terms/,dct
+Erlangen CRM 2017,http://erlangen-crm.org/170309/,crm170309
+FAU Sammlungs-Ontologie,http://objekte-im-netz.fau.de/ontology/common/,faucol
+FOAF,http://xmlns.com/foaf/0.1/,foaf
+GND,http://d-nb.info/gnd/,gnd
+GeoSPARQL,http://www.opengis.net/ont/geosparql#,geosparql
+Getty AAT,http://vocab.getty.edu/aat/,aat
+Getty TGN,http://vocab.getty.edu/tgn/,tgn
+Hornbostel-Sachs-Klassifikation,http://www.mimo-db.eu/HornbostelAndSachs/,hbsachs
+Iconclass,http://iconclass.org/,iconclass
+ORCID,https://orcid.org/,orcid
+OWL,http://www.w3.org/2002/07/owl#,owl
+Pleiades RDF Vocabulary,https://pleiades.stoa.org/places/vocab#,plont
+Pleiades,https://pleiades.stoa.org/places/,pleiades
+Provenance Ontology,http://www.w3.org/ns/prov#,prov
+RDFS,http://www.w3.org/2000/01/rdf-schema#,rdfs
+SKOS,http://www.w3.org/2004/02/skos/core#,skos
+Simple Features geometry Ontology,http://www.opengis.net/ont/sf#,sf
+Wikidata,http://www.wikidata.org/entity/,wd
+XML Schema,http://www.w3.org/2001/XMLSchema#,xsd
+iDAI.chronontology,http://chronontology.dainst.org/period/,chrono
+Nomisma Ontology,http://nomisma.org/ontology#,nomisma
+WGS84 lat/long,http://www.w3.org/2003/01/geo/wgs84_pos#long,wgs84
+VoiD,http://rdfs.org/ns/void#,void
