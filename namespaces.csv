@@ -31,3 +31,4 @@ iDAI.chronontology,http://chronontology.dainst.org/period/,chrono
 Nomisma Ontology,http://nomisma.org/ontology#,nomisma
 WGS84 lat/long,http://www.w3.org/2003/01/geo/wgs84_pos#long,wgs84
 VoiD,http://rdfs.org/ns/void#,void
+GeoNames,http://www.geonames.org/,geonames
